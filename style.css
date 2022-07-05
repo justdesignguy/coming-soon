@@ -1,0 +1,193 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: 100vh;
+	font-family: 'Nunito', sans-serif;
+}
+
+.logo {
+	max-width: 150px;
+	margin: 0 auto 60px auto;
+}
+
+.col-6 {
+	width: 50%;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.full-screen-image {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.comming-soon-content {
+	text-align: center;
+}
+
+.comming-soon-content h2 {
+	color: #15163a;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0;
+}
+
+.comming-soon-content h2 span {
+/*	border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;*/
+    /*padding: 20px 0;*/
+    display: inline-block;
+    line-height: 1;
+    padding: 0 !important;
+}
+
+.comming-soon-content h1 {
+	font-size: 40px;
+	color: #000000;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.comming-soon-content h1 strong {
+	font-weight: 800;
+	display: block;
+	
+}
+
+.socialmedia {
+	margin-top: 40px;
+	list-style-type: none;
+	border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-width: 400px;
+	margin-bottom: 0;
+}
+
+.socialmedia li {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 50%;
+	text-align: center;
+	justify-content: center;
+	border-right: 1px solid #000;
+}
+
+.socialmedia li:last-child  {
+	border-right: none;
+}
+
+.socialmedia li a {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #000000;
+	text-decoration: none;
+	padding: 15px 0;
+	display: block;
+	width: 100%;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+
+.socialmedia li a:hover {
+	background: #000000;
+	color: #ffffff;
+}
+
+
+/********* Responsive *********
+*******************************
+******************************/
+
+@media screen and (max-width: 1800px) {
+	.logo { margin-bottom: 55px; }
+	.comming-soon-content h2 { font-size: 55px; margin-bottom: 35px; }
+	.comming-soon-content h2 span { padding: 18px 0; }
+	.comming-soon-content h1 { font-size: 45px; }
+	.socialmedia { margin-top: 40px; }
+	.socialmedia li a { font-size:17px; }
+}
+
+@media screen and (max-width: 1600px) {
+	.logo { margin-bottom: 50px; }
+	.comming-soon-content h2 { font-size: 50px; margin-bottom: 30px; }
+	.comming-soon-content h2 span { padding: 16px 0; }
+	.comming-soon-content h1 { font-size: 40px; }
+	.socialmedia { margin-top: 35px; }
+	.socialmedia li a { font-size:16px; }
+}
+
+@media screen and (max-width: 1440px) {
+	.logo { margin-bottom: 40px; }
+	.comming-soon-content h2 { font-size: 40px; margin-bottom: 25px; }
+	.comming-soon-content h2 span { padding: 14px 0; }
+	.comming-soon-content h1 { font-size: 30px; }
+	.socialmedia { margin-top: 25px; }
+	.socialmedia li a { font-size:14px; }
+}
+
+@media screen and (max-width: 1199px) {
+	.logo { margin-bottom: 30px; }
+	.comming-soon-content h2 { font-size: 30px; margin-bottom: 20px; }
+	.comming-soon-content h2 span { padding: 12px 0; }
+	.comming-soon-content h1 { font-size: 20px; }
+	.socialmedia { margin-top: 20px; }
+	.socialmedia li a { font-size: 12px; padding: 10px 0; }
+}
+
+@media screen and (max-width: 1024px) {
+	.col-6 { width: 100%; padding: 20px 0; }
+	.col-6:not(:first-child) { position: fixed; top: 0; left: 0; right: 0; z-index: 1; opacity: 0.08; padding: 0; }
+	.socialmedia { min-width: 350px; }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 640px) {
+	
+}
+
+@media screen and (max-width: 480px) {
+
+.socialmedia { min-width: auto; max-width: 200px; margin-left: auto; margin-right: auto; }
+	.socialmedia li { width: 100%; border-right: none; border-bottom: 1px solid #000; }
+	.socialmedia li:last-child { border-bottom: none; }
+}
